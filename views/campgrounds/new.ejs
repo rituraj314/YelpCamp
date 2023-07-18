@@ -1,0 +1,29 @@
+<% layout('layouts/boilerplate') %> 
+<div class="col-6 mx-auto mb-3">
+    <h2>New Campground</h2>
+    <form action="/campgrounds" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Title of Camp</span>
+            <input type="text" class="form-control" name="campgrounds[title]" id="title" required>
+          </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Location</span>
+        <input type="text" class="form-control" name="campgrounds[location]" id="location" required>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+        <input type="text" class="form-control" name="campgrounds[price]" id="price" required>
+    </div>
+    <input type="file" name="image" id="image" multiple>
+    <!-- <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Image URL</span>
+        <input type="text" class="form-control" name="campgrounds[image]" id="image" required>
+    </div> -->
+    <div class="mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+        <textarea class="form-control" name="campgrounds[description]" id="description" rows="2" required></textarea>
+      </div>
+
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>

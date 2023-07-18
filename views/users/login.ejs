@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate') %> 
+<div class="col-6 mx-auto mb-3">
+    <h2>Login!</h2>
+    <form action="/login" method="POST" novalidate class="needs-validation">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
+            <input type="text" class="form-control" name="username" id="username" required></input>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+            <input type="password" class="form-control" name="password" id="password" required></input>
+          </div>
+     
+          <button class="btn btn-success">Submit</button>
+
+   </form>
+
+</div>
